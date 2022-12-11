@@ -1,38 +1,53 @@
 # Part 1
 ### a)
-
-
-
+grep ^beed filescan_00.1
+grep ^blas filescan_00.1
+grep ^bulb filescan_00.1
+grep ^butt filescan_00.1
+grep izard$ filescan_00.2
+grep mander$ filescan_00.2
+grep meleon$ filescan_00.2
+grep ^ivys filescan_00.3
+grep ^jigg filescan_00.3
+grep ^meow filescan_00.3
+grep ^pika filescan_00.3
+grep ^psyd filescan_00.4
+grep ^squi filescan_00.4
+grep ^venu filescan_00.4
+grep ^wart filescan_00.4
 
 ### b)
-
-
+grep ^beed filescan_00.1 > beedrill.txt
+grep ^blas filescan_00.1 > blastoise.txt
+grep ^bulb filescan_00.1 > bulbasaur.txt
+grep ^butt filescan_00.1 > butterfree.txt
+grep izard$ filescan_00.2 > charizard.txt
+grep mander$ filescan_00.2 > charmander.txt
+grep meleon$ filescan_00.2 > charmeleon.txt
+grep ^ivys filescan_00.3 > ivysaur.txt
+grep ^jigg filescan_00.3 > jigglypuff.txt
+grep ^meow filescan_00.3 > meowth.txt
+grep ^pika filescan_00.3 > pikachu.txt
+grep ^psyd filescan_00.4 > psyduck.txt
+grep ^squi filescan_00.4 > squirtle.txt
+grep ^venu filescan_00.4 > venusaur.txt
+grep ^wart filescan_00.4 > wartortle.txt
 
 ### c)
-
-
-
-
-
-
-
-
-
-
-
-
+filescan 1: beedrill, blastoise, bulbasaur, butterfree
+filescan 2: charizard, charmander, charmeleon
+filescan 3: ivysaur, jigglypuff, meowth, pikachu
+filescan 4: psyduck, squirtle, venusaur, wartortle
 
 # Part 2
 ### a)
-
-
-
-
-
-
+ls captured/*.txt | wc -l
+15
 ### b)
-
-
+find captured/ -type f -exec wc -l {} + | sort -rn
+40 captured//pikachu.txt
+40 captured//charizard.txt
+40 captured//beedrill.txt
 
 
 
